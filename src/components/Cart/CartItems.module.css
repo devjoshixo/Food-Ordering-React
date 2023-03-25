@@ -1,0 +1,61 @@
+.mealitem{
+    display:flex;
+    flex-flow:row nowrap;
+    padding:1rem 0.5rem 0rem 0rem;
+    justify-content: space-between;
+    margin:1rem 0rem 1rem 0rem;
+    border-bottom:2px solid #8a2b06;
+}
+
+
+.name{
+    margin:0rem;
+    text-align: left;
+    /* margin-right:3rem; */
+    font-size: 1.5rem;
+}
+
+.price {
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    flex-flow:row nowrap;
+    gap:2rem;
+    font-weight: bold;
+    color:#8a2b06;
+    font-size: 1.1rem;
+    margin:-0.5rem 0.8rem 0rem 0rem;
+}
+
+.amount{
+    border:1px solid rgba(0, 0, 0, 0.418);
+    width:2.5rem;
+    font-weight:300;
+    border-radius:5px
+}
+
+.cartadder button{
+    height:2rem;
+    width:3rem;
+    font-size: 1.5rem;
+    font-weight: light;
+    background-color: white;
+    margin:2rem 0.8rem 1rem 0rem;
+    color:#8a2b06;
+    border:1px solid #8a2b06;
+    border-radius:5px
+}
+
+.cartadder button:hover{
+    color:white;
+    background-color: #8a2b06;
+}
+
+
+
+.addItem{
+    
+}
+
+.removeItem{
+    
+}

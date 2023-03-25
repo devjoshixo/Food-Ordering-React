@@ -1,0 +1,8 @@
+.menuList{
+    width: 60%;
+    height: 20rem;
+    border-radius: 18px;
+    padding:1rem;
+    margin:7rem auto 0 auto;
+    background-color: white;
+}

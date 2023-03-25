@@ -1,0 +1,63 @@
+.mealitem{
+    color:black;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    padding:0.6rem 0.6rem -1rem 10.6rem;
+    margin-bottom: -0.4rem;
+}
+
+.meal h2{
+    font-size: 1.5rem;
+    margin:1rem auto 0rem 0.7rem
+}
+
+
+.description{
+    margin:0 0.3rem 0rem 0.7rem;
+    font-style:italic;
+}
+
+.price{
+    font-size: 20px;
+    font-weight:bolder;
+    color:#ad5502;
+    margin:0 0.3rem 0rem 0.7rem;
+}
+
+.cartadder{
+    display:flex;
+    margin:2rem 1rem 1rem auto;
+    flex-flow:column;
+}
+
+.cartadder label{
+    font-size:1.1rem;
+    font-weight: bolder;
+}
+
+.cartadder input{
+    margin:0 auto 0.5rem 1rem;
+    width:3rem;
+    height:1.8rem;
+    font-weight:bold;
+    font-size: 1rem;
+    border:0.1px solid rgba(0, 0, 0, 0.336);
+    border-radius:5px;
+    padding:0.5rem
+}
+
+.cartadder button{
+    background-color: #8a2b06;
+    border:1px solid #8a2b06;
+    color:white;
+    font-size: 1rem;
+    width:70%;
+    height:2rem;
+    border-radius:20px;
+    margin-left:1.5rem
+}
+
+.cartadder button:hover{
+    background-color: #5f1f05;
+}
