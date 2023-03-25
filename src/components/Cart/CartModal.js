@@ -1,10 +1,22 @@
-import { Fragment, useContext } from 'react';
+import { Fragment, useContext, useEffect, useState } from 'react';
 import classes from './CartModal.module.css';
 import CartContext from '../../context/CartContext';
 import CartItems from './CartItems';
 
 const CartModal = () => {
+  const [isClicked, setIsClicked] = useState(false);
   const a = useContext(CartContext);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsClicked((prevState) => !prevState);
+    }, 300);
+
+    return () => {
+      setIsClicked((prevState) => !prevState);
+      clearTimeout(timer);
+    };
+  }, [a.ModalTrigger]);
 
   const cartList = a.items.map((item) => {
     return (
@@ -19,9 +31,10 @@ const CartModal = () => {
 
   return (
     <Fragment>
-      {' '}
       <div className={classes.backdrop} onClick={a.ModalTrigger}></div>
-      <section className={classes.card}>
+      <section
+        className={`${classes.card} ${isClicked ? classes.popdown : ''}`}
+      >
         {cartList.length < 1 ? (
           ''
         ) : (

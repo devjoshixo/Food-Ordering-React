@@ -17,6 +17,19 @@
     border-radius:20px;
     padding: 1rem;
     text-align: center;
+    animation:popdown 300ms ease-out;
+}
+
+@keyframes popdown{
+    0%{
+        top:17%;
+    }
+    50%{
+        top:21%;
+    }
+    100%{
+        top:23%
+    }
 }
 
 .actionButton{

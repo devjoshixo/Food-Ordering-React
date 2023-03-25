@@ -1,7 +1,30 @@
 .card{
+    position:relative;
+    animation:firstTime 800ms ease-in;
     width:65%;
     background-color:white;
     margin:7rem auto 1rem auto;
     padding:1rem;
     border-radius:15px;
+}
+
+@keyframes firstTime {
+    0%{
+        margin-top:10rem;
+        opacity: 30%;
+    }
+
+    30%{
+        margin-top:9rem;
+        opacity: 40%;
+    }
+
+    50%{
+        margin-top:8rem;
+        opacity: 60%;
+    }
+
+    100%{
+        margin-top:7rem;
+    }
 }

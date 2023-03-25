@@ -1,6 +1,7 @@
 import MealItem from './MealItem';
 
 import classes from './AvailableMeal.module.css';
+import { useEffect } from 'react';
 
 const DUMMY_MEALS = [
   {
@@ -30,6 +31,11 @@ const DUMMY_MEALS = [
 ];
 
 const AvailableMeal = () => {
+  // const [firstTime,setFirstTime] = useState(false);
+
+  // useEffect(() => {
+  //   const timer =
+  // },[])
   const mealList = DUMMY_MEALS.map((meal) => {
     return (
       <MealItem
